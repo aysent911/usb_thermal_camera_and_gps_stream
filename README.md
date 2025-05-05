@@ -1,5 +1,6 @@
 # usb_thermal_camera_and_gps_stream
 An application for streaming raw USB thermal camera frames and GPS data using RaspberryPi.
+Suitable for drone applications and remote monitoring/inspection applications.
 ## Requirements
 1. RaspberryPi (tested on RaspberryPi Zero 2W)
 2. USB Thermal Camera (tested on HT-203H 256*192)
@@ -14,7 +15,7 @@ Refer [here](https://www.electronicwings.com/raspberry-pi/raspberry-pi-uart-comm
    GPS GND -> GND
    GPS TX  -> GPIO15 (UART_RXD0)
    ```
-3. Ensure the RaspberryPi and your PC are coonected to the same local network.
+3. Ensure the RaspberryPi and your PC are connected to the same local network.
 4. ssh into the RaspberryPi
    ```ssh rasp@raspberrypi.local```
 5. Clone the repository

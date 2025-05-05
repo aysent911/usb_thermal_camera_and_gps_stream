@@ -1,0 +1,11 @@
+[Unit]
+Description=USB Thermal camera and GPS streaming service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/rasp/usb_thermal_camera_and_gps_stream/server.py
+StandardOutput=file:/tmp/usb_thermal_camera_and_gps_stream.log
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
